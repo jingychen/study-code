@@ -34,12 +34,12 @@ void draw() {
       , width*0.5, height*0.5);
   }
  
-  //if (onPressed) {
-  //  for (int i=0;i<10;i++) {
-  //    Particle newP = new Particle(mouseX, mouseY, i+pts.size(), i+pts.size());
-  //    pts.add(newP);
-  //  }
-  //}
+  if (onPressed) {
+    for (int i=0;i<10;i++) {
+    Particle newP = new Particle(mouseX, mouseY, i+pts.size(), i+pts.size());
+     pts.add(newP);
+    }
+}
  
   for (int i=0; i<pts.size(); i++) {
     Particle p = pts.get(i);
