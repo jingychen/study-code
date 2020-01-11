@@ -1,0 +1,79 @@
+/*----------------------------------
+    
+ Copyright by Diana Lange 2015
+ Don't use without any permission. Creative Commons: Attribution Non-Commercial.
+    
+ mail: kontakt@diana-lange.de
+ web: diana-lange.de
+ facebook: https://www.facebook.com/DianaLangeDesign
+ flickr: http://www.flickr.com/photos/dianalange/collections/
+ tumblr: http://dianalange.tumblr.com/
+ twitter: http://twitter.com/DianaOnTheRoad
+ vimeo: https://vimeo.com/dianalange/videos
+ */
+Flower f;
+
+
+boolean beSmooth = true;
+
+void setup ()
+{
+  size(700, 700);
+  smooth();
+  //noLoop();
+  //hint(DISABLE_DEPTH_TEST);
+  noLoop();
+  background (247);
+  f = new Flower (200, width/2, height/2, 280, 0, 0.75);
+  
+}
+
+void draw ()
+{
+  background(#021F64);
+ // stroke(211, 196, 154, 120);
+  noStroke();
+  fill(#010E2E);
+  ellipse (width/2, height/2, 580, 580);
+ 
+  
+  noFill();
+  strokeWeight(0.5);
+  stroke (#05E4FF,random(10,200));
+  f.update();
+  
+  
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+//void keyPressed ()
+//{
+//  if (key == 's') {
+//    beSmooth = !beSmooth;
+//    if (beSmooth) {
+//      smooth();
+//    } else {
+//      noSmooth();
+//    }
+//  }
+
+//  if (key == 'n') f.newFlower();
+//  if (key == 't') f.toggleFlower();
+//  if (key == '+') f.more();
+//  if (key == '-') f.less();
+//  redraw();
+//}
+
+//void mousePressed() {
+//  f.newFlower();
+//  redraw();
+//}
