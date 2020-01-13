@@ -93,7 +93,7 @@ class Particle{
      
     acc = new PVector(0,0);
     lifeSpan = int(random(30, 90));
-    decay = random(0.75, 0.9);
+    //decay = random(0.75, 0.9);
     c = color(random(255),random(255),255);
     weightRange = random(3,50);
      
